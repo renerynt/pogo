@@ -9,14 +9,14 @@
 <script>
 function SubForm (){
     $.ajax({
-        url:'https://api.apispreadsheets.com/data/410/',
+        url:'https://api.apispreadsheets.com/data/5WVpBHwwA8qjJl1t/',
         type:'post',
         data:$("#myForm").serializeArray(),
         success: function(){
-          alert("Form Data Submitted :)")
+          alert("Sisestatud :)")
         },
         error: function(){
-          alert("There was an error :(")
+          alert("Ups, midagi läks valesti :(")
         }
     });
 }
@@ -24,23 +24,21 @@ function SubForm (){
 </head>
 <body>
   <form id="myForm">
-    <label>Full Name</label>
+    <label>Nimi</label>
     <br/>
-    <input name="full_name" />
+    <input name="Nimi" />
     <br/>
-    <label>Email</label>
+    <label>Pokedex enne</label>
     <br/>
-    <input name="email" />
+    <input name="Enne" />
     <br/>
-    <label>Age</label>
+    <label>Pokedex pärast</label>
     <br/>
-    <input type="radio" id="age" name="age" value="18-35" /> 18-35<br/>
-    <input type="radio" id="age" name="age" value="35+" /> 35+<br/>
+    <input name="Pärast" />
     <br/>
-    <label>Message</label>
+    <label>Püütud</label>
     <br/>
-    <textarea name="message">
-    </textarea>
+    <input name="Vahe" />
     <br/>
     <br/>
   </form>
