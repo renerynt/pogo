@@ -25,9 +25,22 @@ function SubForm (){
 form {
   text-align: center;
 }
+div.centered {
+   background-color: rgb(18, 80, 144);
+   height: 100vh;
+}
+div.centered span {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   color: rgb(250, 255, 255);
+}
 </style>
 </head>
 <body background="Larvitar.jpg">
+  <div class="centered">
+    <span>
   <form id="myForm">
     <label>Nimi</label>
     <br/>
@@ -47,8 +60,10 @@ form {
     <br/>
     <br/>
   </form>
-  <p align="center">
+  <p>
     <button onclick="SubForm()">Submit</button>
   </p>
+  </span>
+  </div>
 </body>
 </html>
